@@ -310,7 +310,7 @@ solver = SolverFactory("glpk", options={"tmlim": 300})
 results = solver.solve(m)
 results.write()
 
-# debug_model(m)
+debug_model(m)
 
 if (results.solver.status == SolverStatus.ok) and (
     (results.solver.termination_condition == TerminationCondition.optimal)
