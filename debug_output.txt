@@ -1,0 +1,957 @@
+🔍 INFEASIBLE CONSTRAINTID
+
+📦 MUUTUJATE VÄÄRTUSED
+
+PCC_kW[0]                                = -121.0458
+PCC_kW[1]                                = -124.2140
+PCC_kW[2]                                = -126.6727
+PCC_kW[3]                                = -128.3926
+PCC_kW[4]                                = -129.3450
+PCC_kW[5]                                = -129.5203
+PCC_kW[6]                                = -128.9161
+PCC_kW[7]                                = -153.7214
+PCC_kW[8]                                = -151.3541
+PCC_kW[9]                                = -148.0408
+PCC_kW[10]                               = -143.9260
+PCC_kW[11]                               = -176.8863
+PCC_kW[12]                               = -169.7241
+PCC_kW[13]                               = -161.7670
+PCC_kW[14]                               = -153.1146
+PCC_kW[15]                               = -141.8640
+PCC_kW[16]                               = -132.4156
+PCC_kW[17]                               = -122.6106
+PCC_kW[18]                               = -112.3623
+PCC_kW[19]                               = -82.0727
+PCC_kW[20]                               = -73.6604
+PCC_kW[21]                               = -65.3694
+PCC_kW[22]                               = -57.1438
+PCC_kW[23]                               = -42.0105
+PCC_kW[24]                               = -35.3516
+PCC_kW[25]                               = -29.0428
+PCC_kW[26]                               = -23.1299
+PCC_kW[27]                               = -21.5334
+PCC_kW[28]                               = -15.4220
+PCC_kW[29]                               = -9.9540
+PCC_kW[30]                               = -5.1245
+PCC_kW[31]                               = -3.6467
+PCC_kW[32]                               = 1.6879
+PCC_kW[33]                               = 4.2232
+PCC_kW[34]                               = 4.3257
+PCC_kW[35]                               = 4.1257
+PCC_kW[36]                               = 4.1257
+PCC_kW[37]                               = 4.1257
+PCC_kW[38]                               = 4.1257
+PCC_kW[39]                               = 4.3257
+PCC_kW[40]                               = 4.3257
+PCC_kW[41]                               = 4.3257
+PCC_kW[42]                               = 4.3257
+PCC_kW[43]                               = 4.3257
+PCC_kW[44]                               = 4.3257
+PCC_kW[45]                               = 4.3257
+PCC_kW[46]                               = 4.3257
+PCC_kW[47]                               = 4.3257
+PCC_kW[48]                               = 4.3257
+PCC_kW[49]                               = 4.3257
+ESS_kW[0]                                = 0.0000
+ESS_kW[1]                                = 0.0000
+ESS_kW[2]                                = 0.0000
+ESS_kW[3]                                = 0.0000
+ESS_kW[4]                                = 0.0000
+ESS_kW[5]                                = 0.0000
+ESS_kW[6]                                = 0.0000
+ESS_kW[7]                                = 0.1025
+ESS_kW[8]                                = 0.0000
+ESS_kW[9]                                = 0.0000
+ESS_kW[10]                               = 0.0000
+ESS_kW[11]                               = 0.2000
+ESS_kW[12]                               = 0.2000
+ESS_kW[13]                               = 0.2000
+ESS_kW[14]                               = 0.2000
+ESS_kW[15]                               = 0.0000
+ESS_kW[16]                               = 0.0000
+ESS_kW[17]                               = 0.0000
+ESS_kW[18]                               = 0.2000
+ESS_kW[19]                               = 0.0000
+ESS_kW[20]                               = 0.0000
+ESS_kW[21]                               = 0.0000
+ESS_kW[22]                               = 0.0000
+ESS_kW[23]                               = 0.0000
+ESS_kW[24]                               = 0.0000
+ESS_kW[25]                               = 0.0000
+ESS_kW[26]                               = 0.0000
+ESS_kW[27]                               = 0.0000
+ESS_kW[28]                               = 0.0000
+ESS_kW[29]                               = 0.0000
+ESS_kW[30]                               = 0.0000
+ESS_kW[31]                               = 0.0000
+ESS_kW[32]                               = -0.2000
+ESS_kW[33]                               = -0.1025
+ESS_kW[34]                               = 0.0000
+ESS_kW[35]                               = -0.2000
+ESS_kW[36]                               = -0.2000
+ESS_kW[37]                               = -0.2000
+ESS_kW[38]                               = -0.2000
+ESS_kW[39]                               = 0.0000
+ESS_kW[40]                               = 0.0000
+ESS_kW[41]                               = 0.0000
+ESS_kW[42]                               = 0.0000
+ESS_kW[43]                               = 0.0000
+ESS_kW[44]                               = 0.0000
+ESS_kW[45]                               = 0.0000
+ESS_kW[46]                               = 0.0000
+ESS_kW[47]                               = 0.0000
+ESS_kW[48]                               = 0.0000
+ESS_kW[49]                               = 0.0000
+ESS_C_kW[0]                              = 0.0000
+ESS_C_kW[1]                              = 0.0000
+ESS_C_kW[2]                              = 0.0000
+ESS_C_kW[3]                              = 0.0000
+ESS_C_kW[4]                              = 0.0000
+ESS_C_kW[5]                              = 0.0000
+ESS_C_kW[6]                              = 0.0000
+ESS_C_kW[7]                              = 0.0000
+ESS_C_kW[8]                              = 0.0000
+ESS_C_kW[9]                              = 0.0000
+ESS_C_kW[10]                             = 0.0000
+ESS_C_kW[11]                             = 0.0000
+ESS_C_kW[12]                             = 0.0000
+ESS_C_kW[13]                             = 0.0000
+ESS_C_kW[14]                             = 0.0000
+ESS_C_kW[15]                             = 0.0000
+ESS_C_kW[16]                             = 0.0000
+ESS_C_kW[17]                             = 0.0000
+ESS_C_kW[18]                             = 0.0000
+ESS_C_kW[19]                             = 0.0000
+ESS_C_kW[20]                             = 0.0000
+ESS_C_kW[21]                             = 0.0000
+ESS_C_kW[22]                             = 0.0000
+ESS_C_kW[23]                             = 0.0000
+ESS_C_kW[24]                             = 0.0000
+ESS_C_kW[25]                             = 0.0000
+ESS_C_kW[26]                             = 0.0000
+ESS_C_kW[27]                             = 0.0000
+ESS_C_kW[28]                             = 0.0000
+ESS_C_kW[29]                             = 0.0000
+ESS_C_kW[30]                             = 0.0000
+ESS_C_kW[31]                             = 0.0000
+ESS_C_kW[32]                             = 0.0000
+ESS_C_kW[33]                             = 0.0000
+ESS_C_kW[34]                             = 0.0000
+ESS_C_kW[35]                             = 0.0000
+ESS_C_kW[36]                             = 0.0000
+ESS_C_kW[37]                             = 0.0000
+ESS_C_kW[38]                             = 0.0000
+ESS_C_kW[39]                             = 0.0000
+ESS_C_kW[40]                             = 0.0000
+ESS_C_kW[41]                             = 0.0000
+ESS_C_kW[42]                             = 0.0000
+ESS_C_kW[43]                             = 0.0000
+ESS_C_kW[44]                             = 0.0000
+ESS_C_kW[45]                             = 0.0000
+ESS_C_kW[46]                             = 0.0000
+ESS_C_kW[47]                             = 0.0000
+ESS_C_kW[48]                             = 0.0000
+ESS_C_kW[49]                             = 0.0000
+ESS_D_kW[0]                              = 0.0000
+ESS_D_kW[1]                              = 0.0000
+ESS_D_kW[2]                              = 0.0000
+ESS_D_kW[3]                              = 0.0000
+ESS_D_kW[4]                              = 0.0000
+ESS_D_kW[5]                              = 0.0000
+ESS_D_kW[6]                              = 0.0000
+ESS_D_kW[7]                              = 0.0000
+ESS_D_kW[8]                              = 0.0000
+ESS_D_kW[9]                              = 0.0000
+ESS_D_kW[10]                             = 0.0000
+ESS_D_kW[11]                             = 0.0000
+ESS_D_kW[12]                             = 0.0000
+ESS_D_kW[13]                             = 0.0000
+ESS_D_kW[14]                             = 0.0000
+ESS_D_kW[15]                             = 0.0000
+ESS_D_kW[16]                             = 0.0000
+ESS_D_kW[17]                             = 0.0000
+ESS_D_kW[18]                             = 0.0000
+ESS_D_kW[19]                             = 0.0000
+ESS_D_kW[20]                             = 0.0000
+ESS_D_kW[21]                             = 0.0000
+ESS_D_kW[22]                             = 0.0000
+ESS_D_kW[23]                             = 0.0000
+ESS_D_kW[24]                             = 0.0000
+ESS_D_kW[25]                             = 0.0000
+ESS_D_kW[26]                             = 0.0000
+ESS_D_kW[27]                             = 0.0000
+ESS_D_kW[28]                             = 0.0000
+ESS_D_kW[29]                             = 0.0000
+ESS_D_kW[30]                             = 0.0000
+ESS_D_kW[31]                             = 0.0000
+ESS_D_kW[32]                             = 0.0000
+ESS_D_kW[33]                             = 0.0000
+ESS_D_kW[34]                             = 0.0000
+ESS_D_kW[35]                             = 0.0000
+ESS_D_kW[36]                             = 0.0000
+ESS_D_kW[37]                             = 0.0000
+ESS_D_kW[38]                             = 0.0000
+ESS_D_kW[39]                             = 0.0000
+ESS_D_kW[40]                             = 0.0000
+ESS_D_kW[41]                             = 0.0000
+ESS_D_kW[42]                             = 0.0000
+ESS_D_kW[43]                             = 0.0000
+ESS_D_kW[44]                             = 0.0000
+ESS_D_kW[45]                             = 0.0000
+ESS_D_kW[46]                             = 0.0000
+ESS_D_kW[47]                             = 0.0000
+ESS_D_kW[48]                             = 0.0000
+ESS_D_kW[49]                             = 0.0000
+ESS_C_z[0]                               = 0.0000
+ESS_C_z[1]                               = 0.0000
+ESS_C_z[2]                               = 0.0000
+ESS_C_z[3]                               = 0.0000
+ESS_C_z[4]                               = 0.0000
+ESS_C_z[5]                               = 0.0000
+ESS_C_z[6]                               = 0.0000
+ESS_C_z[7]                               = 0.0000
+ESS_C_z[8]                               = 0.0000
+ESS_C_z[9]                               = 0.0000
+ESS_C_z[10]                              = 0.0000
+ESS_C_z[11]                              = 0.0000
+ESS_C_z[12]                              = 0.0000
+ESS_C_z[13]                              = 0.0000
+ESS_C_z[14]                              = 0.0000
+ESS_C_z[15]                              = 0.0000
+ESS_C_z[16]                              = 0.0000
+ESS_C_z[17]                              = 0.0000
+ESS_C_z[18]                              = 0.0000
+ESS_C_z[19]                              = 0.0000
+ESS_C_z[20]                              = 0.0000
+ESS_C_z[21]                              = 0.0000
+ESS_C_z[22]                              = 0.0000
+ESS_C_z[23]                              = 0.0000
+ESS_C_z[24]                              = 0.0000
+ESS_C_z[25]                              = 0.0000
+ESS_C_z[26]                              = 0.0000
+ESS_C_z[27]                              = 0.0000
+ESS_C_z[28]                              = 0.0000
+ESS_C_z[29]                              = 0.0000
+ESS_C_z[30]                              = 0.0000
+ESS_C_z[31]                              = 0.0000
+ESS_C_z[32]                              = 0.0000
+ESS_C_z[33]                              = 0.0000
+ESS_C_z[34]                              = 0.0000
+ESS_C_z[35]                              = 0.0000
+ESS_C_z[36]                              = 0.0000
+ESS_C_z[37]                              = 0.0000
+ESS_C_z[38]                              = 0.0000
+ESS_C_z[39]                              = 0.0000
+ESS_C_z[40]                              = 0.0000
+ESS_C_z[41]                              = 0.0000
+ESS_C_z[42]                              = 0.0000
+ESS_C_z[43]                              = 0.0000
+ESS_C_z[44]                              = 0.0000
+ESS_C_z[45]                              = 0.0000
+ESS_C_z[46]                              = 0.0000
+ESS_C_z[47]                              = 0.0000
+ESS_C_z[48]                              = 0.0000
+ESS_C_z[49]                              = 0.0000
+ESS_D_z[0]                               = 0.0000
+ESS_D_z[1]                               = 0.0000
+ESS_D_z[2]                               = 0.0000
+ESS_D_z[3]                               = 0.0000
+ESS_D_z[4]                               = 0.0000
+ESS_D_z[5]                               = 0.0000
+ESS_D_z[6]                               = 0.0000
+ESS_D_z[7]                               = 0.0000
+ESS_D_z[8]                               = 0.0000
+ESS_D_z[9]                               = 0.0000
+ESS_D_z[10]                              = 0.0000
+ESS_D_z[11]                              = 0.0000
+ESS_D_z[12]                              = 0.0000
+ESS_D_z[13]                              = 0.0000
+ESS_D_z[14]                              = 0.0000
+ESS_D_z[15]                              = 0.0000
+ESS_D_z[16]                              = 0.0000
+ESS_D_z[17]                              = 0.0000
+ESS_D_z[18]                              = 0.0000
+ESS_D_z[19]                              = 0.0000
+ESS_D_z[20]                              = 0.0000
+ESS_D_z[21]                              = 0.0000
+ESS_D_z[22]                              = 0.0000
+ESS_D_z[23]                              = 0.0000
+ESS_D_z[24]                              = 0.0000
+ESS_D_z[25]                              = 0.0000
+ESS_D_z[26]                              = 0.0000
+ESS_D_z[27]                              = 0.0000
+ESS_D_z[28]                              = 0.0000
+ESS_D_z[29]                              = 0.0000
+ESS_D_z[30]                              = 0.0000
+ESS_D_z[31]                              = 0.0000
+ESS_D_z[32]                              = 0.0000
+ESS_D_z[33]                              = 0.0000
+ESS_D_z[34]                              = 0.0000
+ESS_D_z[35]                              = 0.0000
+ESS_D_z[36]                              = 0.0000
+ESS_D_z[37]                              = 0.0000
+ESS_D_z[38]                              = 0.0000
+ESS_D_z[39]                              = 0.0000
+ESS_D_z[40]                              = 0.0000
+ESS_D_z[41]                              = 0.0000
+ESS_D_z[42]                              = 0.0000
+ESS_D_z[43]                              = 0.0000
+ESS_D_z[44]                              = 0.0000
+ESS_D_z[45]                              = 0.0000
+ESS_D_z[46]                              = 0.0000
+ESS_D_z[47]                              = 0.0000
+ESS_D_z[48]                              = 0.0000
+ESS_D_z[49]                              = 0.0000
+ESS_SoC[0]                               = 0.0467
+ESS_SoC[1]                               = 0.0467
+ESS_SoC[2]                               = 0.0467
+ESS_SoC[3]                               = 0.0467
+ESS_SoC[4]                               = 0.0467
+ESS_SoC[5]                               = 0.0467
+ESS_SoC[6]                               = 0.0467
+ESS_SoC[7]                               = 0.0467
+ESS_SoC[8]                               = 0.0557
+ESS_SoC[9]                               = 0.0557
+ESS_SoC[10]                              = 0.0557
+ESS_SoC[11]                              = 0.0557
+ESS_SoC[12]                              = 0.0733
+ESS_SoC[13]                              = 0.0909
+ESS_SoC[14]                              = 0.1085
+ESS_SoC[15]                              = 0.1261
+ESS_SoC[16]                              = 0.1261
+ESS_SoC[17]                              = 0.1261
+ESS_SoC[18]                              = 0.1261
+ESS_SoC[19]                              = 0.1437
+ESS_SoC[20]                              = 0.1437
+ESS_SoC[21]                              = 0.1437
+ESS_SoC[22]                              = 0.1437
+ESS_SoC[23]                              = 0.1437
+ESS_SoC[24]                              = 0.1437
+ESS_SoC[25]                              = 0.1437
+ESS_SoC[26]                              = 0.1437
+ESS_SoC[27]                              = 0.1437
+ESS_SoC[28]                              = 0.1437
+ESS_SoC[29]                              = 0.1437
+ESS_SoC[30]                              = 0.1437
+ESS_SoC[31]                              = 0.1437
+ESS_SoC[32]                              = 0.1437
+ESS_SoC[33]                              = 0.1261
+ESS_SoC[34]                              = 0.1171
+ESS_SoC[35]                              = 0.1171
+ESS_SoC[36]                              = 0.0995
+ESS_SoC[37]                              = 0.0819
+ESS_SoC[38]                              = 0.0643
+ESS_SoC[39]                              = 0.0467
+ESS_SoC[40]                              = 0.0467
+ESS_SoC[41]                              = 0.0467
+ESS_SoC[42]                              = 0.0467
+ESS_SoC[43]                              = 0.0467
+ESS_SoC[44]                              = 0.0467
+ESS_SoC[45]                              = 0.0467
+ESS_SoC[46]                              = 0.0467
+ESS_SoC[47]                              = 0.0467
+ESS_SoC[48]                              = 0.0467
+ESS_SoC[49]                              = 0.0467
+change[0]                                = 0.0000
+change[1]                                = 0.0000
+change[2]                                = 0.0000
+change[3]                                = 0.0000
+change[4]                                = 0.0000
+change[5]                                = 0.0000
+change[6]                                = 0.0000
+change[7]                                = 0.0000
+change[8]                                = 0.0000
+change[9]                                = 0.0000
+change[10]                               = 0.0000
+change[11]                               = 0.0000
+change[12]                               = 0.0000
+change[13]                               = 0.0000
+change[14]                               = 0.0000
+change[15]                               = 0.0000
+change[16]                               = 0.0000
+change[17]                               = 0.0000
+change[18]                               = 0.0000
+change[19]                               = 0.0000
+change[20]                               = 0.0000
+change[21]                               = 0.0000
+change[22]                               = 0.0000
+change[23]                               = 0.0000
+change[24]                               = 0.0000
+change[25]                               = 0.0000
+change[26]                               = 0.0000
+change[27]                               = 0.0000
+change[28]                               = 0.0000
+change[29]                               = 0.0000
+change[30]                               = 0.0000
+change[31]                               = 0.0000
+change[32]                               = 0.0000
+change[33]                               = 0.0000
+change[34]                               = 0.0000
+change[35]                               = 0.0000
+change[36]                               = 0.0000
+change[37]                               = 0.0000
+change[38]                               = 0.0000
+change[39]                               = 0.0000
+change[40]                               = 0.0000
+change[41]                               = 0.0000
+change[42]                               = 0.0000
+change[43]                               = 0.0000
+change[44]                               = 0.0000
+change[45]                               = 0.0000
+change[46]                               = 0.0000
+change[47]                               = 0.0000
+change[48]                               = 0.0000
+change[49]                               = 0.0000
+
+📏 CONSTRAINTIDE VÄÄRTUSED JA STAATUS
+
+ess_output[0]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[1]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[2]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[3]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[4]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[5]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[6]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[7]                            : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[8]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[9]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[10]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[11]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[12]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[13]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[14]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[15]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[16]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[17]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[18]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[19]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[20]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[21]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[22]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[23]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[24]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[25]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[26]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[27]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[28]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[29]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[30]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[31]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[32]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[33]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[34]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[35]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[36]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[37]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[38]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[39]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[40]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[41]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[42]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[43]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[44]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[45]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[46]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[47]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[48]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_output[49]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[0]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[1]                            : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[2]                            : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[3]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[4]                            : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[5]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[6]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[7]                            : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[8]                            : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[9]                            : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[10]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[11]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[12]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[13]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[14]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[15]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[16]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[17]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[18]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[19]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[20]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[21]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[22]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[23]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[24]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[25]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[26]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[27]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[28]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[29]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[30]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[31]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[32]                           : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[33]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[34]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[35]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[36]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[37]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[38]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[39]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[40]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[41]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[42]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[43]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[44]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[45]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[46]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[47]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[48]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_output[49]                           : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[0]                         : body=0.047, lower=0.04666023353300726, upper=0.04666023353300726 --> ✅ OK
+ess_SoC_const[1]                         : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[2]                         : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[3]                         : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[4]                         : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[5]                         : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[6]                         : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[7]                         : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[8]                         : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[9]                         : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[10]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[11]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[12]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[13]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[14]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[15]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[16]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[17]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[18]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[19]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[20]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[21]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[22]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[23]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[24]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[25]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[26]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[27]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[28]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[29]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[30]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[31]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[32]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[33]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[34]                        : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[35]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[36]                        : body=-0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[37]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[38]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[39]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[40]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[41]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[42]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[43]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[44]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[45]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[46]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[47]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[48]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+ess_SoC_const[49]                        : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+pcc_power_import_limit[0]                : body=-121.046, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[1]                : body=-124.214, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[2]                : body=-126.673, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[3]                : body=-128.393, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[4]                : body=-129.345, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[5]                : body=-129.520, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[6]                : body=-128.916, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[7]                : body=-153.721, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[8]                : body=-151.354, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[9]                : body=-148.041, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[10]               : body=-143.926, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[11]               : body=-176.886, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[12]               : body=-169.724, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[13]               : body=-161.767, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[14]               : body=-153.115, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[15]               : body=-141.864, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[16]               : body=-132.416, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[17]               : body=-122.611, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[18]               : body=-112.362, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[19]               : body=-82.073, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[20]               : body=-73.660, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[21]               : body=-65.369, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[22]               : body=-57.144, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[23]               : body=-42.010, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[24]               : body=-35.352, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[25]               : body=-29.043, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[26]               : body=-23.130, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[27]               : body=-21.533, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[28]               : body=-15.422, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[29]               : body=-9.954, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[30]               : body=-5.125, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[31]               : body=-3.647, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[32]               : body=1.688, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[33]               : body=4.223, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[34]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[35]               : body=4.126, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[36]               : body=4.126, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[37]               : body=4.126, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[38]               : body=4.126, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[39]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[40]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[41]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[42]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[43]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[44]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[45]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[46]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[47]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[48]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_import_limit[49]               : body=4.326, lower=None, upper=50.0 --> ✅ OK
+pcc_power_export_limit[0]                : body=-121.046, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[1]                : body=-124.214, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[2]                : body=-126.673, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[3]                : body=-128.393, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[4]                : body=-129.345, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[5]                : body=-129.520, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[6]                : body=-128.916, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[7]                : body=-153.721, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[8]                : body=-151.354, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[9]                : body=-148.041, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[10]               : body=-143.926, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[11]               : body=-176.886, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[12]               : body=-169.724, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[13]               : body=-161.767, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[14]               : body=-153.115, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[15]               : body=-141.864, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[16]               : body=-132.416, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[17]               : body=-122.611, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[18]               : body=-112.362, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[19]               : body=-82.073, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[20]               : body=-73.660, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[21]               : body=-65.369, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[22]               : body=-57.144, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[23]               : body=-42.010, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[24]               : body=-35.352, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[25]               : body=-29.043, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[26]               : body=-23.130, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[27]               : body=-21.533, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[28]               : body=-15.422, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[29]               : body=-9.954, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[30]               : body=-5.125, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[31]               : body=-3.647, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[32]               : body=1.688, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[33]               : body=4.223, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[34]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[35]               : body=4.126, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[36]               : body=4.126, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[37]               : body=4.126, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[38]               : body=4.126, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[39]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[40]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[41]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[42]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[43]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[44]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[45]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[46]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[47]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[48]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+pcc_power_export_limit[49]               : body=4.326, lower=-1000.0, upper=None --> ✅ OK
+ess_sim_c_d_restrict[0]                  : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[1]                  : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[2]                  : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[3]                  : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[4]                  : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[5]                  : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[6]                  : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[7]                  : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[8]                  : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[9]                  : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[10]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[11]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[12]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[13]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[14]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[15]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[16]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[17]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[18]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[19]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[20]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[21]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[22]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[23]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[24]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[25]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[26]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[27]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[28]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[29]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[30]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[31]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[32]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[33]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[34]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[35]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[36]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[37]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[38]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[39]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[40]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[41]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[42]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[43]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[44]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[45]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[46]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[47]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[48]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_sim_c_d_restrict[49]                 : body=0.000, lower=None, upper=1.0 --> ✅ OK
+ess_d_limit[0]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[1]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[2]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[3]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[4]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[5]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[6]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[7]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[8]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[9]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[10]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[11]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[12]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[13]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[14]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[15]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[16]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[17]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[18]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[19]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[20]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[21]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[22]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[23]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[24]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[25]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[26]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[27]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[28]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[29]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[30]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[31]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[32]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[33]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[34]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[35]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[36]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[37]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[38]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[39]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[40]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[41]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[42]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[43]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[44]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[45]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[46]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[47]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[48]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_d_limit[49]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[0]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[1]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[2]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[3]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[4]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[5]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[6]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[7]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[8]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[9]                           : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[10]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[11]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[12]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[13]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[14]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[15]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[16]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[17]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[18]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[19]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[20]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[21]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[22]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[23]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[24]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[25]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[26]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[27]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[28]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[29]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[30]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[31]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[32]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[33]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[34]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[35]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[36]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[37]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[38]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[39]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[40]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[41]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[42]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[43]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[44]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[45]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[46]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[47]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[48]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_c_limit[49]                          : body=0.000, lower=None, upper=0.0 --> ✅ OK
+ess_corr_lo_limit[0]                     : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[1]                     : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[2]                     : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[3]                     : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[4]                     : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[5]                     : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[6]                     : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[7]                     : body=0.102, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[8]                     : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[9]                     : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[10]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[11]                    : body=0.200, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[12]                    : body=0.200, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[13]                    : body=0.200, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[14]                    : body=0.200, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[15]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[16]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[17]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[18]                    : body=0.200, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[19]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[20]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[21]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[22]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[23]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[24]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[25]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[26]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[27]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[28]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[29]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[30]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[31]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[32]                    : body=-0.200, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[33]                    : body=-0.102, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[34]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[35]                    : body=-0.200, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[36]                    : body=-0.200, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[37]                    : body=-0.200, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[38]                    : body=-0.200, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[39]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[40]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[41]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[42]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[43]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[44]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[45]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[46]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[47]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[48]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_lo_limit[49]                    : body=0.000, lower=-175.0, upper=None --> ✅ OK
+ess_corr_hi_limit[0]                     : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[1]                     : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[2]                     : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[3]                     : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[4]                     : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[5]                     : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[6]                     : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[7]                     : body=0.102, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[8]                     : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[9]                     : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[10]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[11]                    : body=0.200, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[12]                    : body=0.200, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[13]                    : body=0.200, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[14]                    : body=0.200, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[15]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[16]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[17]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[18]                    : body=0.200, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[19]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[20]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[21]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[22]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[23]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[24]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[25]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[26]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[27]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[28]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[29]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[30]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[31]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[32]                    : body=-0.200, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[33]                    : body=-0.102, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[34]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[35]                    : body=-0.200, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[36]                    : body=-0.200, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[37]                    : body=-0.200, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[38]                    : body=-0.200, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[39]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[40]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[41]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[42]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[43]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[44]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[45]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[46]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[47]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[48]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+ess_corr_hi_limit[49]                    : body=0.000, lower=None, upper=175.0 --> ✅ OK
+change_constraint[0]                     : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[1]                     : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[2]                     : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[3]                     : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[4]                     : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[5]                     : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[6]                     : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[7]                     : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[8]                     : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[9]                     : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[10]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[11]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[12]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[13]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[14]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[15]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[16]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[17]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[18]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[19]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[20]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[21]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[22]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[23]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[24]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[25]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[26]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[27]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[28]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[29]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[30]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[31]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[32]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[33]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[34]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[35]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[36]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[37]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[38]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[39]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[40]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[41]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[42]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[43]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[44]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[45]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[46]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[47]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[48]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
+change_constraint[49]                    : body=0.000, lower=0.0, upper=0.0 --> ✅ OK
