@@ -31,7 +31,7 @@ query_utils.init(api_url, api_headers)
 logger = setup_logger(
     log_file="query.log",
     loki_url="http://localhost:3100/loki/api/v1/push",  # Loki address
-    loki_tags={"app_name": "A1Runner"},        # add more tags if needed
+    loki_tags={"app_name": "A1Runner"},                 # add more tags if needed
     level="INFO"
 )
 
@@ -47,7 +47,7 @@ min_period = raw_data["params"]["min_period"]
 
 prod = [{"time": r["time"], "value": r["value"]/1000} for r in query_utils.get_last_prognosis_readings(raw_data["params"]["productionPrognosisIdentifier"])] # production prognosis
 cons = [{"time": r["time"], "value": r["value"]/1000} for r in query_utils.get_last_prognosis_readings(raw_data["params"]["consumptionPrognosisIdentifier"])] # consumption prognosis
-ess_lt_plan = [{"time": r["time"], "value": r["value"]/1000} for r in query_utils.get_last_prognosis_readings(raw_data["params"]["essCurrentPowerPlanIdentifier"])] # kui andmeid pole, siis nullid
+ess_lt_plan = [{"time": r["time"], "value": r["value"]/1000} for r in query_utils.get_last_prognosis_readings(raw_data["params"]["essCurrentPowerPlanIdentifier"])] 
 
 # Model parameters
 ESS_kW = raw_data["params"]["essPowerLimitW"]/1000 # salvesti võimsus 
@@ -98,7 +98,7 @@ ess_lt_plan_array = np.array([r["value"] for r in ess_lt_plan])
 ESS_LT_PLAN_C_data = np.where(ess_lt_plan_array < 0, 0, ess_lt_plan_array)
 ESS_LT_PLAN_D_data = np.where(ess_lt_plan_array > 0, 0, ess_lt_plan_array)
 
-
+# Convert list-of-dict model into a DataFrame
 def model_to_df(m):
     st = 0
     en = len(m.T)
@@ -131,9 +131,12 @@ def model_to_df(m):
     print(df)
     return df
 
+# Find a common time range for two or more different forecasts
 time_range = Util.find_common_time_range([ess_lt_plan, cons, prod])
+# Calculate the length of the common time range
 period = datetime.fromisoformat(time_range["end"]) - datetime.fromisoformat(time_range["start"])
 
+# If common time range is bigger than given min_period
 if int(period.total_seconds()) > min_period:
     time_range_start = datetime.fromisoformat(time_range["start"])
     time_range_end = datetime.fromisoformat(time_range["end"])
@@ -310,8 +313,11 @@ solver = SolverFactory("glpk", options={"tmlim": 300})
 results = solver.solve(m)
 results.write()
 
+# Debug the model to log infeasible constraints, variable values, and constraint statuses 
+# and save diagnostic output to a file
 debug_model(m)
 
+# Check that the solver completed successfully with an optimal or feasible result
 if (results.solver.status == SolverStatus.ok) and (
     (results.solver.termination_condition == TerminationCondition.optimal)
     or (results.solver.termination_condition == TerminationCondition.feasible)
@@ -319,6 +325,8 @@ if (results.solver.status == SolverStatus.ok) and (
     # Format results as data frame
     results_df = model_to_df(m)
     
+    # Use the variable from 'results_df' if available;  
+    # otherwise, fall back to the previous prognosis and readings.
     if (len(results_df) == 0):
         # Use old prognosis, if it exists
         logger.warning(f"Optimization failed - empty result")
@@ -326,22 +334,24 @@ if (results.solver.status == SolverStatus.ok) and (
     else:
         # use optimized results
         essPowerPrognosisRaw = results_df["ESS"].values * 1000
-
+        
+    # Create a list of prognosis readings with corresponding timestamps
     essPowerPlanned =[]
-
     for i, value in enumerate(essPowerPrognosisRaw):
         reading_time = start_time + timedelta(seconds=i * interval)  
         essPowerPlanned.append({
             "time": reading_time.isoformat().replace('+00:00', 'Z'),
             "value": value
         })
-
+        
+    # Construct the prognosis payload with datapoint ID, timestamp, and planned ESS power readings
     prognosis_payload = {
         "datapointId": result_dp_id,
         "time": start_time.isoformat().replace('+00:00', 'Z'),
         "readings":essPowerPlanned
     }
-
+    
+    # POST datapoint prognosis and prognosis readings
     response = query_utils.post_datapoint_prognosis(prognosis_payload)
     logger.info(f"datapoint prognosis was posted: {response}")
 else: 
