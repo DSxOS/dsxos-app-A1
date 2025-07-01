@@ -19,8 +19,8 @@ params:
   productionPrognosisIdentifier: "production_p_lt"    # Production forecast values
   consumptionPrognosisIdentifier: "consumption_p_lt"  # Consumption forecast values
   essCurrentPowerPlanIdentifier: "ess_p_lt_a5"        # Previous prognosis that is used in case optimization fails
-  essResultPowerPlanIdentifier: "ess_p_lt_a1"         # Result prognosis
+  essResultPowerPlanIdentifier: "ess_p_lt"         # Result prognosis
   essEffectiveCharge: "ess_charge"                    # effective storage charge at the beginning of optimization(may be negative)
   essEffectiveEndCharge: "ess_charge"                 # effective charge of the storage device at the end of optimization
-  interval: 900
-  min_period: 21600
+  interval: 900                                       # time interval between forecast values [seconds] 
+  min_period: 21600                                   # minimum time for which a forecast is needed [seconds] 

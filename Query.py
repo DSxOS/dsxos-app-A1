@@ -66,7 +66,7 @@ class Query:
                 **kwargs
             )
             response.raise_for_status()
-            #logger.info(f"{method} {url} – {response.status_code}")
+            # logger.info(f"{method} {url} – {response.status_code}")
             if response.content:
                 return response.json()
             return None

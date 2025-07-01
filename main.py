@@ -16,7 +16,7 @@ from debug import debug_model
 
 # create parser
 parser = argparse.ArgumentParser(description="Run A1 with config file")
-parser.add_argument("-c", "--config", required=True, help="Path to config YAML file")
+parser.add_argument("-c", "--config", required=False, help="Path to config YAML file", default="/app/config.yaml")
 args = parser.parse_args()              # Read arguments
 with open(args.config, "r") as f:       # Open and read config-file
     raw_data = yaml.safe_load(f)
@@ -26,16 +26,18 @@ api_url = raw_data["params"]["apiEndpoint"]
 api_token = raw_data["params"]["token"]
 api_headers = {"Authorization": api_token}
 
+app_name = raw_data["appModule"]
+
 # Initialize query_utils with URL + headers    
 query_utils.init(api_url, api_headers)
 logger = setup_logger(
     log_file="query.log",
-    loki_url="http://localhost:3100/loki/api/v1/push",  # Loki address
-    loki_tags={"app_name": "A1Runner"},                 # add more tags if needed
+    loki_url="http://127.0.0.1:3100/loki/api/v1/push",  # Loki address
+    loki_tags={"app_name": app_name},                 # add more tags if needed
     level="INFO"
 )
 
-logger.info("A1Runner start")
+logger.info(f"{app_name} start.")
 
 start_time = datetime.now(timezone.utc)
 
@@ -63,9 +65,14 @@ current_dp_id = raw_data["params"]["essCurrentPowerPlanIdentifier"]
 result_dp_id = query_utils.get_datapoint(raw_data["params"]["essResultPowerPlanIdentifier"])[0]["id"]
 
 ########################################################################
+logger.info(f"result_dp_id: {result_dp_id}")
+logger.info(f"essResultPowerPlanIdentifier: {raw_data["params"]["essResultPowerPlanIdentifier"]}")
 logger.info(f"len(prod): {len(prod)}")
+# logger.info(f"prod: {prod}")
 logger.info(f"len(cons): {len(cons)}")
+# logger.info(f"cons: {cons}")
 logger.info(f"len(ess_lt_plan): {len(ess_lt_plan)}")
+# logger.info(f"ess_lt_plan: {ess_lt_plan}")
 ########################################################################
 print("=========================")
 print(f"ESS_kW -- ,{ESS_kW}!")
@@ -135,7 +142,7 @@ def model_to_df(m):
 time_range = Util.find_common_time_range([ess_lt_plan, cons, prod])
 # Calculate the length of the common time range
 period = datetime.fromisoformat(time_range["end"]) - datetime.fromisoformat(time_range["start"])
-
+logger.info(f"period: {period}")
 # If common time range is bigger than given min_period
 if int(period.total_seconds()) > min_period:
     time_range_start = datetime.fromisoformat(time_range["start"])
@@ -357,4 +364,4 @@ if (results.solver.status == SolverStatus.ok) and (
 else: 
     logger.error(f"Solver failed - empty result")
 
-logger.info("A1Runner finished")
+logger.info(f"{app_name} finished.")

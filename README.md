@@ -19,7 +19,7 @@ Files
 - debug.py
 - logger.py
 - query_utils.py
-- Query.py
-- Util.py
+- Query.py - GET POST PUT DELETE data fom database
+- Util.py - 
 - requirements.txt
 - example_config.yaml
