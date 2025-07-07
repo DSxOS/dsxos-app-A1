@@ -1,8 +1,12 @@
-# dsxos-app-A1
+# dsxos-app-A1 - Peak shaving Application
 
-# Peak shaving Application
+This repository contains a **Peak Shaving Application** consisting of two coordinated components:
 
-Consists of Two Applications
+    1. Power Management Application
+
+    2. Energy Management Application
+
+Together, they manage power and energy flows at the Point of Common Coupling (PCC) to ensure operational efficiency and constraint compliance.
 
 ## Power Management Application
 
@@ -12,14 +16,31 @@ The Power Management Application ensures that power values at the Point of Commo
 
 The Energy Management Application ensures sufficient energy is available to support the power management functions. It uses load and production forecasts to model PCC energy use over the outlook period. If the used energy exceeds the set limits, the application adjusts the energy schedule, making minimal changes to the existing schedule to ensure compliance and efficiency.
 
-Peak shaving algorithm is described [here](https://github.com/DSxOS/platform/blob/main/docs/workermodules/Peak_Shaving_Description.pdf)
+Peak shaving algorithm is described in detail [here](https://github.com/DSxOS/platform/blob/main/docs/workermodules/Peak_Shaving_Description.pdf)
 
 Files
-- main.py
-- debug.py
-- logger.py
-- query_utils.py
-- Query.py - GET POST PUT DELETE data fom database
-- Util.py - 
-- requirements.txt
-- example_config.yaml
+
+- main.py - Main entry point for running the peak shaving application.
+- debug.py - Debugging tool for diagnosing model infeasibilities, logging variable/constraint states, and saving diagnostics.
+- logger.py - Logging utility.
+- query_utils.py - Helper methods for interacting with the database: 'get_datapoint' , 'get_last_reading', 'get_last_reading_value', 'get_last_prognosis_reading', 'get_datapoint_prognosis', 'post_prognosis_readings', 'post_datapoint_prognosis'.
+- Query.py - Abstractions for HTTP-based data access (GET, POST, PUT, DELETE).
+- Util.py - Data processing utilities: 'calculate_count', 'validate_inputs', 'parse_time', 'generate_result_series', 'extract_prognosis_values', 'find_common_time_range', 'extract_values_only'.
+- requirements.txt - Required Python packages.
+- example_config.yaml - Example configuration file used by main.py
+
+## Requirements
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Application
+
+Ensure example_config.yaml is configured, then run:
+
+```bash
+python main.py
+```
