@@ -29,8 +29,8 @@ api_token = raw_data["params"]["token"]
 payload = {
     "sub": "53f6dbb9-5834-486b-8878-362e6213a780",
     "role": "USER",
-    "iat": datetime.datetime.utcnow(),
-    "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=1)
+    "iat": datetime.utcnow(),
+    "exp": datetime.utcnow() + datetime.timedelta(hours=1)
 }
 
 token = jwt.encode(payload, api_token, algorithm="HS256")
