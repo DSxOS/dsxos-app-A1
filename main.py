@@ -12,6 +12,7 @@ import query_utils
 import Util
 from logger import setup_logger
 from debug import debug_model
+import jwt
 
 
 # create parser
@@ -24,7 +25,17 @@ with open(args.config, "r") as f:       # Open and read config-file
 # Extract API URL and Token
 api_url = raw_data["params"]["apiEndpoint"]
 api_token = raw_data["params"]["token"]
-api_headers = {"Authorization": api_token}
+
+payload = {
+    "sub": "53f6dbb9-5834-486b-8878-362e6213a780",
+    "role": "USER",
+    "iat": datetime.datetime.utcnow(),
+    "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=1)
+}
+
+token = jwt.encode(payload, api_token, algorithm="HS256")
+
+api_headers = {"Authorization": token}
 
 app_name = raw_data["appModule"]
 
