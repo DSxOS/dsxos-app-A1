@@ -12,7 +12,6 @@ import query_utils
 import Util
 from logger import setup_logger
 from debug import debug_model
-import jwt
 
 
 # create parser
@@ -25,22 +24,18 @@ with open(args.config, "r") as f:       # Open and read config-file
 # Extract API URL and Token
 api_url = raw_data["params"]["apiEndpoint"]
 api_token = raw_data["params"]["token"]
+client_id = raw_data["params"]["clientId"]
 
-payload = {
-    "sub": "53f6dbb9-5834-486b-8878-362e6213a780",
-    "role": "USER",
-    "iat": datetime.utcnow(),
-    "exp": datetime.utcnow() + datetime.timedelta(hours=1)
-}
-
-token = jwt.encode(payload, api_token, algorithm="HS256")
-
-api_headers = {"Authorization": token}
+#api_headers = {"Authorization": "Bearer " + token}
+api_headers = {}
 
 app_name = raw_data["appModule"]
 
-# Initialize query_utils with URL + headers    
+# Initialize query_utils with URL + headers
 query_utils.init(api_url, api_headers)
+jwt_token = query_utils.get_token(client_id, api_token)
+query_utils.add_header("Authorization", f"Bearer {jwt_token}")
+
 logger = setup_logger(
     log_file="query.log",
     loki_url="http://127.0.0.1:3100/loki/api/v1/push",  # Loki address
