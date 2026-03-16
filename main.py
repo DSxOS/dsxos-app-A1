@@ -72,7 +72,7 @@ result_dp_id = query_utils.get_datapoint(raw_data["params"]["essResultPowerPlanI
 
 ########################################################################
 logger.info(f"result_dp_id: {result_dp_id}")
-logger.info(f"essResultPowerPlanIdentifier: {raw_data["params"]["essResultPowerPlanIdentifier"]}")
+logger.info(f"essResultPowerPlanIdentifier: {raw_data['params']['essResultPowerPlanIdentifier']}")
 logger.info(f"len(prod): {len(prod)}")
 # logger.info(f"prod: {prod}")
 logger.info(f"len(cons): {len(cons)}")
