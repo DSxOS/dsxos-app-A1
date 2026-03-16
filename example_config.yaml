@@ -11,6 +11,7 @@ logLevel: 4                                       # Logging level
 params:
   apiEndpoint: "http://localhost:8080/api"        # API endpoint to call
   token: "Bearer YOUR_TOKEN"                      # Authorization token (replace with real one)
+  clientID: "your-client-api-id"                  # The client ID matching the API token
   pccImportLimitW: 50000                          # PCC limit energy import
   pccExportLimitW: -1000000                       # PCC limit power export
   essMinSafeLim: "ess_min_batt_safe_lim"
