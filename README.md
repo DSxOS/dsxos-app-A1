@@ -1,46 +1,51 @@
-# dsxos-app-A1 - Peak shaving Application
+# dsxos-app-A1 - Peak-shaving correction
 
-This repository contains a **Peak Shaving Application** consisting of two coordinated components:
+A1 takes a long-term ESS plan (for example A5's economic plan) and changes it **as little as possible** so that the
+PCC power stays within the import and export limits. The corrected plan is written as a prognosis of a datapoint
+(W, positive = charging). A1 runs as a DSxOS python app on its `cron`, shortly after the app that writes the
+long-term plan.
 
-    1. Power Management Application
+Requirements: [docs/requirements-a1-nrg-integration.md](docs/requirements-a1-nrg-integration.md) (A1-IMP; it reuses
+the decisions of dsxos-app-A5 A5-IMP and A5-AUTH).
 
-    2. Energy Management Application
+## Model
 
-Together, they manage power and energy flows at the Point of Common Coupling (PCC) to ensure operational efficiency and constraint compliance.
+Per time step (`interval`):
+- **ESS:** charge/discharge in [0, Pmax], never both. Stored energy `E[k+1] = E[k] + (ch·η_ch − dis/η_dis)·Δt`,
+  within [`ess_min_soc`, `ess_max_soc`] % of the capacity (widened to the start value if it is already outside).
+- **Correction:** `ess − plan = cUp − cDown`.
+- **PCC:** import − export = load + pv + ess, with pv negative. The limits are soft: an overrun that cannot be fixed
+  is penalised and reported as a WARNING.
+- **Minimised (kWh):** Σ(cUp + cDown)·Δt + `pccLimitPenaltyPerKWh` · overrun. No end target: A1 follows the
+  long-term plan.
 
-## Power Management Application
+The long-term plan is step-held onto the time grid (start = run time rounded down to `interval`); before its first
+point its first value is used. With too little input data, or no usable solver result, A1 passes the long-term plan
+through uncorrected (fallback). Exit 0 = corrected plan or fallback posted; 1 = error or no long-term plan.
 
-The Power Management Application ensures that power values at the Point of Common Coupling (PCC) do not exceed predefined limits. It determines the direction of power flow at the PCC and enforces the respective power limits. If PCC power exceeds the limit, system assets are utilized to adjust the power levels back within the limit. Conversely, if PCC power is within the limit, the application fine-tunes the output of system assets to maintain optimal power levels according to the scheduled energy.
+## Configuration (`params`)
 
-## Energy Management Application
+See [example_config.yaml](example_config.yaml).
 
-The Energy Management Application ensures sufficient energy is available to support the power management functions. It uses load and production forecasts to model PCC energy use over the outlook period. If the used energy exceeds the set limits, the application adjusts the energy schedule, making minimal changes to the existing schedule to ensure compliance and efficiency.
+| Param | Unit | Default | Meaning |
+|---|---|---|---|
+| `apiEndpoint`, `clientId` (legacy `clientID`), `token` | | required | Data server API and credential (client ID + secret) |
+| `consumptionPrognosisIdentifier` / `productionPrognosisIdentifier` | W | required | Load / PV forecast (PV negative) |
+| `essCurrentPowerPlanIdentifier` | W | required | Datapoint whose latest prognosis is the long-term plan |
+| `essResultPowerPlanIdentifier` | W | required | Datapoint that receives the corrected plan |
+| `ess_max_P_dp_id` or `essPowerLimitW` | W | one required | ESS power limit: datapoint, or a fixed number |
+| `ess_max_E_dp_id` or `essMaxCharge` | Wh | one required | ESS capacity: datapoint, or a fixed number |
+| `essEffectiveCharge` | Wh | required | Datapoint: total stored energy now (at most `maxInputAgeS` old) |
+| `ess_min_soc`, `ess_max_soc` | % | 0, 100 | SoC window |
+| `pccImportLimitW`, `pccExportLimitW` | W | required | PCC limits; export as a number ≤ 0 (0 = no export) |
+| `interval`, `min_period` | s | required | Time step; minimum common horizon |
+| `essChargeEfficiency`, `essDischargeEfficiency` | | 0.95 | Efficiencies |
+| `pccLimitPenaltyPerKWh` | | 1000 | Penalty per kWh of PCC overrun |
+| `solverTimeLimitS`, `maxInputAgeS` | s | 300, 900 | GLPK limit; max age of the stored-energy reading |
+| `lokiUrl`, `writeDebugFile` | | Loki on localhost, `on-failure` | Logging; debug file `on-failure`/`always`/`never` |
+| `essMinSafeLim`, `essEffectiveEndCharge`, `npPriceIdentifier` | | | Accepted, ignored |
 
-Peak shaving algorithm is described in detail [here](https://github.com/DSxOS/platform/blob/main/docs/workermodules/Peak_Shaving_Description.pdf)
+## Tests
 
-Files
-
-- main.py - Main entry point for running the peak shaving application.
-- debug.py - Debugging tool for diagnosing model infeasibilities, logging variable/constraint states, and saving diagnostics.
-- logger.py - Logging utility.
-- query_utils.py - Helper methods for interacting with the database: 'get_datapoint' , 'get_last_reading', 'get_last_reading_value', 'get_last_prognosis_reading', 'get_datapoint_prognosis', 'post_prognosis_readings', 'post_datapoint_prognosis'.
-- Query.py - Abstractions for HTTP-based data access (GET, POST, PUT, DELETE).
-- Util.py - Data processing utilities: 'calculate_count', 'validate_inputs', 'parse_time', 'generate_result_series', 'extract_prognosis_values', 'find_common_time_range', 'extract_values_only'.
-- requirements.txt - Required Python packages.
-- example_config.yaml - Example configuration file used by main.py
-
-## Requirements
-
-Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Running the Application
-
-Ensure example_config.yaml is configured, then run:
-
-```bash
-python main.py
-```
+`pip install -r requirements-dev.txt && pytest` (the model tests need `glpsol`, apt package `glpk-utils`, see
+`packages.txt`).
