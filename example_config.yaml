@@ -13,13 +13,15 @@ params:
   productionPrognosisIdentifier: "production_p"     # PV forecast [W], negative = generation
   essCurrentPowerPlanIdentifier: "ess_p_a5"         # long-term plan to correct [W] (e.g. A5's result)
   essResultPowerPlanIdentifier: "ess_p_a1"          # receives the corrected plan [W], positive = charging
-  ess_max_P_dp_id: "ess_max_P"                      # ESS power limit datapoint [W] (or essPowerLimitW: 175000)
-  ess_max_E_dp_id: "ess_max_E"                      # ESS capacity datapoint [Wh] (or essMaxCharge: 284000)
+  ess_max_P_charge_dp_id: "ess_max_P_charge"        # charge power limit [W], positive: datapoint id or number
+  ess_max_P_discharge_dp_id: "ess_max_P_discharge"  # discharge power limit [W], positive: datapoint id or number
+  ess_max_E_dp_id: "ess_max_E"                      # ESS capacity [Wh]: datapoint id or number (e.g. 284000)
   essEffectiveCharge: "ess_charge"                  # total stored energy now [Wh]
-  ess_min_soc: 15                                   # SoC window [%]
+  ess_min_soc: 15                                   # SoC window [%]: datapoint id or number
   ess_max_soc: 90
-  pccImportLimitW: 50000                            # PCC import limit [W] (soft)
-  pccExportLimitW: -1000000                         # PCC export limit [W], negative (soft)
+  pccImportLimitW: 50000                            # upper limit of the net PCC power [W], import positive (soft): datapoint id or number
+  pccExportLimitW: -1000000                         # lower limit of the net PCC power [W], signed (soft): negative = export allowed,
+                                                    # 0 = no export, positive = minimum import. Datapoint id or number
   interval: 60                                      # time step [s]
   min_period: 21600                                 # minimum common horizon [s]
   # essChargeEfficiency: 0.95
