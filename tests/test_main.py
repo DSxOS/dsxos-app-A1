@@ -170,7 +170,7 @@ R1_CASES = {
     "pccExportLimitW": (20000, {}, 10000.0),
     "ess_max_P_charge_dp_id": (5000, {"pccExportLimitW": 20000}, 10000.0),
     "ess_max_P_discharge_dp_id": (10000, {}, 100000.0),
-    "ess_max_E_dp_id": (60000, {"pccExportLimitW": 20000}, 10000.0),
+    "ess_max_E_dp_id": (40000, {"pccExportLimitW": 20000}, 10000.0),
 }
 OPERATIONAL = list(R1_CASES)
 

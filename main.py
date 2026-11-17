@@ -273,7 +273,7 @@ def run(config_path, now=None):
     e0_kwh = clamp_energy_kwh(e0_raw_kwh, capacity_kwh, "essEffectiveCharge")
     logger.info("inputs: " + ", ".join(f"{k}={ops[k]:g} ({srcs[k]})" for k in OPERATIONAL))
     start_txt = f"{e0_raw_kwh:.3f}" + (f" (used {e0_kwh:.3f})" if e0_kwh != e0_raw_kwh else "")
-    logger.info(f"inputs: capacity (usable)={capacity_kwh:g} kWh, start energy={start_txt} kWh, "
+    logger.info(f"inputs: capacity={capacity_kwh:g} kWh (usable), start energy={start_txt} kWh, "
                 f"Pch={p_charge_kw} kW, Pdis={p_discharge_kw} kW, PCC limits [{lower_kw}, {upper_kw}] kW, "
                 f"values load/pv/plan={len(load)}/{len(pv)}/{len(plan)}, start={iso(start)}")
 

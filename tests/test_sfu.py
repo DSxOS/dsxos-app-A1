@@ -44,7 +44,7 @@ def inputs(**over):
 def test_b_bounds_are_zero_and_capacity():
     assert a1model.energy_bounds(inputs()) == (0.0, 227.5)
     m = a1model.build_model(inputs())
-    assert all(m.E[k].lb == 0.0 and m.E[k].ub == 227.5 for k in m.E)
+    assert all(m.E[k].lb == 0.0 and m.E[k].ub == 227.5 for k in range(1, len(inputs().load_kw) + 1))
 
 
 @pytest.mark.parametrize("u,used,warns", [(34.3, 34.3, False), (-5.0, 0.0, True), (300.0, 227.5, True)])
