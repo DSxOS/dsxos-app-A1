@@ -6,7 +6,7 @@ import model as a1model
 
 def inputs(**over):
     base = dict(interval_s=900, load_kw=[100.0] * 4, pv_kw=[0.0] * 4, plan_kw=[0.0] * 4,
-                p_charge_kw=50.0, p_discharge_kw=50.0, capacity_kwh=100.0, e0_kwh=50.0, soc_min_pct=15, soc_max_pct=80,
+                p_charge_kw=50.0, p_discharge_kw=50.0, capacity_kwh=100.0, e0_kwh=50.0, soc_min=0.15, soc_max=0.80,
                 import_limit_kw=80.0, lower_limit_kw=0.0, eta_charge=0.95, eta_discharge=0.95,
                 pcc_penalty_per_kwh=1000.0)
     base.update(over)

@@ -12,7 +12,7 @@ the decisions of dsxos-app-A5 A5-IMP and A5-AUTH).
 
 Per time step (`interval`):
 - **ESS:** charge in [0, Pch] and discharge in [0, Pdis] (separate limits), never both. Stored energy `E[k+1] = E[k] + (ch·η_ch − dis/η_dis)·Δt`,
-  within [`ess_min_soc`, `ess_max_soc`] % of the capacity (widened to the start value if it is already outside).
+  within [`ess_min_soc`, `ess_max_soc`] x capacity (both are **fractions**, 0..1; the window is widened to the start value if it is already outside).
 - **Correction:** `ess − plan = cUp − cDown`.
 - **PCC:** net = load + pv + ess, import positive, pv negative. The window `L − oL ≤ net ≤ U + oU` is soft (L = `pccExportLimitW`, signed: negative = export allowed, 0 = no export, positive = minimum import): an overrun that cannot be fixed
   is penalised and reported as a WARNING ("import" or "below the lower limit").
@@ -27,7 +27,7 @@ through uncorrected (fallback). Exit 0 = corrected plan or fallback posted; 1 = 
 
 See [example_config.yaml](example_config.yaml).
 
-**Operational parameters** (the rows below marked "datapoint id or number"): a string is a datapoint id whose latest value is read at every run (missing or no value = input error, exit 1, nothing posted; no staleness check); a number is a constant. The resolved values and their sources (`dp <id>` or `const`) are logged once per run. Checked per run: limits and capacity > 0, `0 ≤ ess_min_soc < ess_max_soc ≤ 100`, `pccExportLimitW ≤ pccImportLimitW` (a violation is an input error for a datapoint source and a configuration error for a number). Stale or removed params (see OPD R5) are a configuration error that names the replacement.
+**Operational parameters** (the rows below marked "datapoint id or number"): a string is a datapoint id whose latest value is read at every run (missing or no value = input error, exit 1, nothing posted; no staleness check); a number is a constant. The resolved values and their sources (`dp <id>` or `const`) are logged once per run. Checked per run: limits and capacity > 0, `0 ≤ ess_min_soc < ess_max_soc ≤ 1` (fractions: percent values such as 15 are rejected with a hint), `pccExportLimitW ≤ pccImportLimitW` (a violation is an input error for a datapoint source and a configuration error for a number). Stale or removed params (see OPD R5) are a configuration error that names the replacement.
 
 | Param | Unit | Default | Meaning |
 |---|---|---|---|
@@ -37,10 +37,10 @@ See [example_config.yaml](example_config.yaml).
 | `essResultPowerPlanIdentifier` | W | required | Datapoint that receives the corrected plan |
 | `pccImportLimitW` | W | required | Upper limit of the net PCC power (import positive): datapoint id or number |
 | `pccExportLimitW` | W | required | Lower limit of the net PCC power, signed: negative = export allowed, 0 = no export, positive = minimum import. Datapoint id or number |
-| `ess_min_soc`, `ess_max_soc` | % | required | SoC window: datapoint id or number |
+| `ess_min_soc`, `ess_max_soc` | fraction 0..1 | required | SoC window as fractions of the capacity (for example 0.15 and 0.80; not percent): datapoint id or number |
 | `ess_max_P_charge_dp_id`, `ess_max_P_discharge_dp_id` | W | required | Charge / discharge power limit, positive magnitudes (the same datapoint or number may be given for both): datapoint id or number |
-| `ess_max_E_dp_id` | Wh | required | ESS capacity: datapoint id or number |
-| `essEffectiveCharge` | Wh | required | Datapoint: total stored energy now (at most `maxInputAgeS` old) |
+| `ess_max_E_dp_id` | Wh | required | Gross ESS capacity: datapoint id or number |
+| `essEffectiveCharge` | Wh | required | Datapoint: **usable** energy above the minimum SoC now, 0 .. capacity x (max - min) (at most `maxInputAgeS` old). A1 converts it to total energy: capacity x min + clamp(usable, 0, capacity x (max - min)); a value outside the range is clamped with a WARNING |
 | `interval`, `min_period` | s | required | Time step; minimum common horizon |
 | `essChargeEfficiency`, `essDischargeEfficiency` | | 0.95 | Efficiencies |
 | `pccLimitPenaltyPerKWh` | | 1000 | Penalty per kWh of PCC overrun |
