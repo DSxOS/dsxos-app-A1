@@ -20,9 +20,7 @@ class PlanInputs:
     p_charge_kw: float                  # charge power limit (positive magnitude)
     p_discharge_kw: float               # discharge power limit (positive magnitude)
     capacity_kwh: float
-    e0_kwh: float                       # total stored energy at the start
-    soc_min: float                     # fraction 0..1 of the capacity
-    soc_max: float                     # fraction 0..1 of the capacity
+    e0_kwh: float                       # usable energy at the start, in [0, capacity]
     import_limit_kw: float              # U: soft upper limit of the net PCC power (import positive)
     lower_limit_kw: float               # L: soft lower limit of the net PCC power, signed (negative = export allowed)
     eta_charge: float = 0.95
@@ -43,10 +41,8 @@ class PlanResult:
 
 
 def energy_bounds(inp: PlanInputs):
-    """[Emin, Emax] from the SoC window, widened to include E[0] if it is already outside."""
-    e_min = inp.capacity_kwh * inp.soc_min
-    e_max = inp.capacity_kwh * inp.soc_max
-    return min(e_min, inp.e0_kwh), max(e_max, inp.e0_kwh)
+    """[Emin, Emax] = [0, usable capacity] (SFU-A1)."""
+    return 0.0, inp.capacity_kwh
 
 
 def build_model(inp: PlanInputs) -> pyo.ConcreteModel:

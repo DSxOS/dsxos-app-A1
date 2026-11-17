@@ -6,7 +6,7 @@ import model as a1model
 
 def inputs(**over):
     base = dict(interval_s=900, load_kw=[100.0] * 4, pv_kw=[0.0] * 4, plan_kw=[0.0] * 4,
-                p_charge_kw=50.0, p_discharge_kw=50.0, capacity_kwh=100.0, e0_kwh=50.0, soc_min=0.15, soc_max=0.80,
+                p_charge_kw=50.0, p_discharge_kw=50.0, capacity_kwh=100.0, e0_kwh=50.0,
                 import_limit_kw=80.0, lower_limit_kw=0.0, eta_charge=0.95, eta_discharge=0.95,
                 pcc_penalty_per_kwh=1000.0)
     base.update(over)
@@ -34,10 +34,10 @@ def test_plan_within_limits_is_unchanged():
     assert r.correction_kwh == pytest.approx(0.0, abs=1e-6)
 
 
-def test_soc_window_limits_the_correction():
-    # Only 5 kWh stored above Emin (15 kWh): at most 5 * 0.95 = 4.75 kWh can be delivered; the rest is overrun.
-    r = solve(inputs(e0_kwh=20.0))
-    assert min(r.energy_kwh) >= 15.0 - 1e-6
+def test_energy_floor_limits_the_correction():
+    # Only 5 kWh of usable energy (the floor is 0): at most 5 * 0.95 = 4.75 kWh can be delivered; the rest is overrun.
+    r = solve(inputs(e0_kwh=5.0))
+    assert min(r.energy_kwh) >= -1e-6
     assert r.import_overrun_kwh == pytest.approx(20.0 - 5.0 * 0.95, abs=1e-4)
 
 
