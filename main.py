@@ -71,7 +71,7 @@ def soc_message(a, b):
     msg = f"need 0 <= ess_min_soc < ess_max_soc <= 1 (fractions, got ess_min_soc={a:g}, ess_max_soc={b:g})"
     for name, v in (("ess_min_soc", a), ("ess_max_soc", b)):
         if v > 1:
-            msg += f"; the limits are fractions: {name}={v:g} looks like percent; use {v / 100:g}"
+            msg += f"; the limits are fractions: {name}={v:g} looks like percent" + (f"; use {v / 100:g}" if v <= 100 else "")
     return msg
 
 

@@ -168,7 +168,7 @@ def test_no_plan_exits_1(cfg, monkeypatch, caplog):
 R1_CASES = {
     "pccImportLimitW": (70000, {}, 100000.0),
     "pccExportLimitW": (20000, {}, 10000.0),
-    "ess_min_soc": (0.45, {}, 100000.0),
+    "ess_min_soc": (0.5, {}, 100000.0),
     "ess_max_soc": (0.52, {"pccExportLimitW": 20000}, 10000.0),
     "ess_max_P_charge_dp_id": (5000, {"pccExportLimitW": 20000}, 10000.0),
     "ess_max_P_discharge_dp_id": (10000, {}, 100000.0),
@@ -214,9 +214,9 @@ def test_r1_datapoint_missing_or_without_value_is_an_input_error(cfg, monkeypatc
     ({"ess_max_P_charge_dp_id": 0}, "ess_max_P_charge_dp_id must be > 0"),
     ({"ess_max_P_discharge_dp_id": -5}, "ess_max_P_discharge_dp_id must be > 0"),
     ({"ess_max_E_dp_id": 0}, "ess_max_E_dp_id must be > 0"),
-    ({"ess_min_soc": 0.8}, "0 <= ess_min_soc < ess_max_soc <= 100"),
-    ({"ess_min_soc": -1}, "0 <= ess_min_soc < ess_max_soc <= 100"),
-    ({"ess_max_soc": 1.01}, "0 <= ess_min_soc < ess_max_soc <= 100"),
+    ({"ess_min_soc": 0.8}, "0 <= ess_min_soc < ess_max_soc <= 1"),
+    ({"ess_min_soc": -1}, "0 <= ess_min_soc < ess_max_soc <= 1"),
+    ({"ess_max_soc": 1.01}, "0 <= ess_min_soc < ess_max_soc <= 1"),
     ({"pccExportLimitW": 90000}, "pccExportLimitW (lower limit) must be <= pccImportLimitW"),
 ])
 def test_r2_constants_violating_the_rules_are_configuration_errors(cfg, monkeypatch, caplog, over, needle):
@@ -231,8 +231,8 @@ def test_r2_constants_violating_the_rules_are_configuration_errors(cfg, monkeypa
     ("ess_max_P_charge_dp_id", 0.0, "ess_max_P_charge_dp_id must be > 0"),
     ("ess_max_P_discharge_dp_id", -1.0, "ess_max_P_discharge_dp_id must be > 0"),
     ("ess_max_E_dp_id", 0.0, "ess_max_E_dp_id must be > 0"),
-    ("ess_min_soc", 0.9, "0 <= ess_min_soc < ess_max_soc <= 100"),
-    ("ess_max_soc", 1.2, "0 <= ess_min_soc < ess_max_soc <= 100"),
+    ("ess_min_soc", 0.9, "0 <= ess_min_soc < ess_max_soc <= 1"),
+    ("ess_max_soc", 1.2, "0 <= ess_min_soc < ess_max_soc <= 1"),
     ("pccExportLimitW", 90000.0, "pccExportLimitW (lower limit) must be <= pccImportLimitW"),
     ("pccImportLimitW", -5000.0, "pccExportLimitW (lower limit) must be <= pccImportLimitW"),
 ])
