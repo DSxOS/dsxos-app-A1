@@ -15,10 +15,10 @@ params:
   essResultPowerPlanIdentifier: "ess_p_a1"          # receives the corrected plan [W], positive = charging
   ess_max_P_charge_dp_id: "ess_max_P_charge"        # charge power limit [W], positive: datapoint id or number
   ess_max_P_discharge_dp_id: "ess_max_P_discharge"  # discharge power limit [W], positive: datapoint id or number
-  ess_max_E_dp_id: "ess_max_E"                      # ESS capacity [Wh]: datapoint id or number (e.g. 284000)
-  essEffectiveCharge: "ess_charge"                  # total stored energy now [Wh]
-  ess_min_soc: 15                                   # SoC window [%]: datapoint id or number
-  ess_max_soc: 90
+  ess_max_E_dp_id: "ess_max_E"                      # GROSS ESS capacity [Wh]: datapoint id or number (e.g. 284000)
+  essEffectiveCharge: "ess_charge"                  # USABLE energy above ess_min_soc now [Wh], 0 .. capacity*(max-min)
+  ess_min_soc: 0.15                                 # SoC window as FRACTIONS 0..1 (not percent): datapoint id or number
+  ess_max_soc: 0.90
   pccImportLimitW: 50000                            # upper limit of the net PCC power [W], import positive (soft): datapoint id or number
   pccExportLimitW: -1000000                         # lower limit of the net PCC power [W], signed (soft): negative = export allowed,
                                                     # 0 = no export, positive = minimum import. Datapoint id or number

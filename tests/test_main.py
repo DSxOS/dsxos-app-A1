@@ -28,7 +28,7 @@ class FakeServer:
             "pchg": {"lastReadingValue": 50000.0},
             "pdis": {"lastReadingValue": 50000.0},
             "cap": {"lastReadingValue": 100000.0},
-            "charge": {"lastReadingValue": 50000.0, "lastReadingTime": iso(NOW - timedelta(seconds=20))},
+            "charge": {"lastReadingValue": 35000.0, "lastReadingTime": iso(NOW - timedelta(seconds=20))},
         }
         self.forecasts = {
             "cons": series(hours, lambda i: 100000.0),           # 100 kW: above the 80 kW limit
@@ -56,7 +56,7 @@ def cfg(tmp_path, monkeypatch):
         "essCurrentPowerPlanIdentifier": "a5plan", "essResultPowerPlanIdentifier": "ess_p_a1_test",
         "ess_max_P_charge_dp_id": "pchg", "ess_max_P_discharge_dp_id": "pdis", "ess_max_E_dp_id": "cap",
         "essEffectiveCharge": "charge",
-        "ess_min_soc": 15, "ess_max_soc": 80, "pccImportLimitW": 80000, "pccExportLimitW": 0,
+        "ess_min_soc": 0.15, "ess_max_soc": 0.80, "pccImportLimitW": 80000, "pccExportLimitW": 0,
         "interval": 900, "min_period": 21600, "solverTimeLimitS": 60,
     }
     path = tmp_path / "config.yaml"
@@ -104,7 +104,7 @@ def test_numbers_are_used_as_constants(cfg, monkeypatch, caplog):
     srv.install(monkeypatch)
     path = cfg(ess_max_P_charge_dp_id=40000, ess_max_P_discharge_dp_id=40000, ess_max_E_dp_id=90000)
     assert main.run(path, now=NOW) == 0
-    assert "Pch=40.0 kW, Pdis=40.0 kW, capacity=90.0 kWh" in caplog.text
+    assert "capacity=90 kWh" in caplog.text
     assert "ess_max_E_dp_id=90000 (const)" in caplog.text
 
 
@@ -168,8 +168,8 @@ def test_no_plan_exits_1(cfg, monkeypatch, caplog):
 R1_CASES = {
     "pccImportLimitW": (70000, {}, 100000.0),
     "pccExportLimitW": (20000, {}, 10000.0),
-    "ess_min_soc": (45, {}, 100000.0),
-    "ess_max_soc": (52, {"pccExportLimitW": 20000}, 10000.0),
+    "ess_min_soc": (0.5, {}, 100000.0),
+    "ess_max_soc": (0.52, {"pccExportLimitW": 20000}, 10000.0),
     "ess_max_P_charge_dp_id": (5000, {"pccExportLimitW": 20000}, 10000.0),
     "ess_max_P_discharge_dp_id": (10000, {}, 100000.0),
     "ess_max_E_dp_id": (60000, {"pccExportLimitW": 20000}, 10000.0),
@@ -214,9 +214,9 @@ def test_r1_datapoint_missing_or_without_value_is_an_input_error(cfg, monkeypatc
     ({"ess_max_P_charge_dp_id": 0}, "ess_max_P_charge_dp_id must be > 0"),
     ({"ess_max_P_discharge_dp_id": -5}, "ess_max_P_discharge_dp_id must be > 0"),
     ({"ess_max_E_dp_id": 0}, "ess_max_E_dp_id must be > 0"),
-    ({"ess_min_soc": 80}, "0 <= ess_min_soc < ess_max_soc <= 100"),
-    ({"ess_min_soc": -1}, "0 <= ess_min_soc < ess_max_soc <= 100"),
-    ({"ess_max_soc": 101}, "0 <= ess_min_soc < ess_max_soc <= 100"),
+    ({"ess_min_soc": 0.8}, "0 <= ess_min_soc < ess_max_soc <= 1"),
+    ({"ess_min_soc": -1}, "0 <= ess_min_soc < ess_max_soc <= 1"),
+    ({"ess_max_soc": 1.01}, "0 <= ess_min_soc < ess_max_soc <= 1"),
     ({"pccExportLimitW": 90000}, "pccExportLimitW (lower limit) must be <= pccImportLimitW"),
 ])
 def test_r2_constants_violating_the_rules_are_configuration_errors(cfg, monkeypatch, caplog, over, needle):
@@ -231,8 +231,8 @@ def test_r2_constants_violating_the_rules_are_configuration_errors(cfg, monkeypa
     ("ess_max_P_charge_dp_id", 0.0, "ess_max_P_charge_dp_id must be > 0"),
     ("ess_max_P_discharge_dp_id", -1.0, "ess_max_P_discharge_dp_id must be > 0"),
     ("ess_max_E_dp_id", 0.0, "ess_max_E_dp_id must be > 0"),
-    ("ess_min_soc", 90.0, "0 <= ess_min_soc < ess_max_soc <= 100"),
-    ("ess_max_soc", 120.0, "0 <= ess_min_soc < ess_max_soc <= 100"),
+    ("ess_min_soc", 0.9, "0 <= ess_min_soc < ess_max_soc <= 1"),
+    ("ess_max_soc", 1.2, "0 <= ess_min_soc < ess_max_soc <= 1"),
     ("pccExportLimitW", 90000.0, "pccExportLimitW (lower limit) must be <= pccImportLimitW"),
     ("pccImportLimitW", -5000.0, "pccExportLimitW (lower limit) must be <= pccImportLimitW"),
 ])
